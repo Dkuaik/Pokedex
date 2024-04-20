@@ -73,9 +73,9 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
             .then(response =>response.json())
             .then(data => {
                 const tipo = data.types.map(type => type.type.name);
-                if (tipo.some (tipo => tipo.includes(botonId) )){
+                if (tipo.some (tipo => tipo.includes(botonId)) || botonId === "ver-todos"){
                     mostrarPokemon(data);
-                };
+                } ; 
             })
     }
 
