@@ -1,2 +1,2 @@
 # Pokedex
-In this proyect I wan to make a pokedex consumind PokeApi
+In this proyect I want to make a pokedex consuming PokeApi
