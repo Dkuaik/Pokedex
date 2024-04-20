@@ -78,7 +78,7 @@ header {
     display: none;
 }
 #nav-toggle {
-    display:block; /* Oculta el checkbox */
+    display:none; /* Oculta el checkbox */
 }
 
 #nav-toggle:checked + .nav {
