@@ -46,7 +46,7 @@ button {
 body {
     min-height: 100vh;
     background-color: var(--clr-gray);
-    margin-top:10rem;
+    margin-top:12rem;
 }
 
 header {
@@ -78,7 +78,7 @@ header {
     display: none;
 }
 #nav-toggle {
-    display:block; /* Oculta el checkbox */
+    display:none; /* Oculta el checkbox */
 }
 
 #nav-toggle:checked + .nav {
@@ -224,6 +224,9 @@ main {
 
 .pokemon-stats {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .5rem;
     gap: 1rem;
     font-size: .85rem;
 }
@@ -232,6 +235,7 @@ main {
     background-color: var(--clr-gray);
     padding: .25rem .5rem;
     border-radius: 100vmax;
+    align-items: flex-end;
 }
 
 
