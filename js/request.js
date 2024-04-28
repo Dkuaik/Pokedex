@@ -4,7 +4,7 @@ const promesasFetch= []
 const botonesHeader = document.querySelectorAll(".btn-header")
 console.log(botonesHeader)
 
-for (let i = 1; i <= 151; i++) {
+for (let i = 1; i <= 300; i++) {
     const fetchPromise = fetch(URL + i)
         .then(response => response.json())
         .then(data => {
@@ -26,6 +26,8 @@ Promise.all(promesasFetch)
             )
          }
     ); 
+    
+console.log("hola")
 
 function mostrarPokemon(poke){
     
@@ -64,11 +66,11 @@ function mostrarPokemon(poke){
     `;
     listaPokemon.append(div); 
 }
-
+ 
 botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     const botonId = event.currentTarget.id;
     listaPokemon.innerHTML="";
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 1; i <= 300; i++) {
         fetch(URL+i)
             .then(response =>response.json())
             .then(data => {
@@ -79,4 +81,4 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
             })
     }
 
-}  ) )
+}  ) ) 
